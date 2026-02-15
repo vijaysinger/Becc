@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Is Vijay the best?</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: pink;
+      margin-top: 100px;
+    }
 
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .yes { background: white; color: hotpink; }
+    .no { background: hotpink; color: white; }
+
+    #response {
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Is Vijay the best?</h1>
+
+<button class="yes" onclick="sayYes()">Yes</button>
+<button class="no" onclick="sayNo()">No</button>
+
+<div id="response"></div>
+
+<script>
+  function sayYes() {
+    document.getElementById("response").innerText =
+      "You know what you’re talking about!! 🫶";
+  }
+
+  function sayNo() {
+    document.getElementById("response").innerText =
+      "Try again loser 🤨";
+  }
+</script>
+
+</body>
+</html>
